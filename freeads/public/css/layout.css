@@ -1,0 +1,61 @@
+body, div, form, input, aside, ul, li, h1, h2, a {
+    margin: 0px;
+    padding: 0px;
+    color: #000000;
+    list-style: none;
+    font-size: 1em;
+    font-family: Trebuchet, Sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+#container {
+    width: 90%;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+}
+#main_section {
+  margin-left: 10%;
+  width: 100%;
+}
+#aside_layout {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+#aside_layout h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #21407a;
+}
+
+#aside_layout ul {
+    width: 75%;
+}
+
+#aside_layout ul li {
+    width: 150%;
+}
+
+.aside_link, .aside_link a {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    display: block;
+    color: #3160B6;
+}
+.aside_link a {
+    margin: 5px 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+.aside_link:hover, .aside_link:hover a {
+    background: #1ABC9C;
+    color: #ffffff;
+    padding-left: 30px;
+}

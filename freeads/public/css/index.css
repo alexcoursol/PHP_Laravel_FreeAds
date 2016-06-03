@@ -1,0 +1,81 @@
+#posts_box {
+
+}
+.one_post {
+    border: 2px solid #000000;
+    margin-bottom: 40px;
+    padding:3%;
+}
+.post_list {
+    /*background-color: red;*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.post_list li {
+    width: 20%;
+    text-align: center;
+}
+.post_title {
+    font-size: 1.8em;
+}
+.post_photo {
+    width: 100px;
+    height: 100px;
+}
+
+.button_list {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.edit_button {
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #1ABC9C;
+  background-color: #ffffff;
+  color: #4a89dc;
+}
+.edit_button:hover {
+  cursor: pointer;
+  background-color: #1ABC9C;
+  color: #ffffff;
+}
+.delete_button {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #C92434;
+    background-color: #ffffff;
+    color: #4a89dc;
+}
+.delete_button:hover {
+    cursor: pointer;
+    background-color: #C92434;
+    color: #ffffff;
+}
+
+.post_show_list li{
+    margin-bottom: 40px
+}
+
+.post_show_title {
+    font-size: 4em;
+}
+.post_show_price {
+    font-size: 1.5em;
+}
+.post_show_content {
+    width: 800px;
+    word-wrap:break-word;
+}
+.post_show_photo {
+    width: 300px;
+    height: 300px;
+}
+.post_show_created_at {
+    font-style: italic;
+}

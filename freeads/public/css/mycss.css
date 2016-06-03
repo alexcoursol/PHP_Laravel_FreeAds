@@ -1,0 +1,254 @@
+body, div, form, input, textarea, aside, ul, li, h1, h2, a {
+    margin: 0px;
+    padding: 0px;
+    color: #000000;
+    list-style: none;
+    font-size: 1em;
+    font-family: Trebuchet, Sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: #fff;
+}
+
+/************SIGN************/
+/*#form_and_errors {*/
+  /*display: flex;*/
+  /*justify-content: space-around;*/
+  /*align-items: center;*/
+  /*width: 30%;*/
+  /*background-color: green;*/
+/*}*/
+/*#errors {
+  background-color: red;
+}*/
+
+.error_sign {
+  color: red;
+  margin-top: 10px;
+}
+.myform {
+    margin: 0 auto;
+    width: 380px;
+    padding: 3em 2em 2em 2em;
+    background: #fafafa;
+    border: 1px solid #ebebeb;
+    box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+}
+
+.input_sign_text {
+    position: relative;
+    margin-bottom: 70px;
+}
+.input_sign_text input, .input_sign_text textarea {
+    font-size: 1.4em;
+    padding: 10px 10px 10px 5px;
+    -webkit-appearance: none;
+    display: block;
+    background: #fafafa;
+    color: #636363;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+.input_sign_text input:focus { outline: none; }
+.input_sign_text textarea:focus { outline: none; }
+.input_sign_text label {
+    color: #999;
+    font-size: 1.4em;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: all 0.2s ease;
+}
+.input_sign_text input:focus ~ label, .input_sign_text input.used ~ label {
+    top: -20px;
+    transform: scale(.75); left: -2px;
+    color: #4a89dc;
+}
+.input_sign_text textarea:focus ~ label, .input_sign_text textarea.used ~ label {
+    top: -20px;
+    transform: scale(.75); left: -2px;
+    color: #4a89dc;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 104%;
+}
+.bar:before, .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #4a89dc;
+    transition: all 0.2s ease;
+}
+
+.bar:before { left: 50%; }
+.bar:after { right: 50%; }
+.input_sign_text input:focus ~ .bar:before, .input_sign_text input:focus ~ .bar:after { width: 50%; }
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  margin: .3em 0 1em 0;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  border: 0;
+  border-bottom: 2px solid #3160B6;
+  cursor: pointer;
+}
+.button:focus { outline: 0; }
+.buttonBlue {
+  background: #4a89dc;
+  text-shadow: 1px 1px 0 rgba(39, 110, 204, .5);
+}
+.buttonBlue:hover { background: #357bd8; }
+
+.link_user {
+  color: #3160B6;
+  font-size: 1em;
+}
+.link_user:hover {
+}
+
+/***********HOME************/
+#upload_form {
+  /*margin-top: 15%;*/
+}
+#user-login {
+  font-size: 1.8em;
+}
+#upload_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#label_file {
+  display: block;
+  width: 176px;
+  height: 130px;
+  background-image: url(upload.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+#label_file:hover{
+  background-image: url(upload_hover.png);
+}
+#upload_file {
+  display: none;
+}
+#upload_button {
+  height: 50px;
+  width: 40%;
+}
+.one_file_box {
+  margin: 30px auto;
+  width: 90%;
+  padding: 2em;
+  background: #fafafa;
+  border: 1px solid #ebebeb;
+  box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.one_file_list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 350%;
+}
+.one_file_list:hover {
+}
+.one_file_list li {
+  margin-right: 10%;
+}
+.edit_button {
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #1ABC9C;
+  background-color: #ffffff;
+  color: #4a89dc;
+}
+.edit_button:hover {
+  cursor: pointer;
+  background-color: #1ABC9C;
+  color: #ffffff;
+}
+.delete_button_box {
+  /*align-self: flex-end;*/
+  float: right;
+}
+.delete_button {
+    padding: 5px 10px 5px 10px;
+    border: 1px solid #C92434;
+    background-color: #ffffff;
+    color: #4a89dc;
+}
+.delete_button:hover {
+    cursor: pointer;
+    background-color: #C92434;
+    color: #ffffff;
+}
+
+/*********CLOUDS********/
+.clouds {
+  z-index: 1;
+  display: none;
+  position: relative;
+
+}
+
+/***********ADMIN**********/
+#users_files_box {
+  width: 500px;
+  margin: 30px auto 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.one_user_box {
+  padding: 2em;
+  background: #fafafa;
+  border: 1px solid #ebebeb;
+  box-shadow: rgba(0,0,0,0.14902) 0px 1px 1px 0px,rgba(0,0,0,0.09804) 0px 1px 2px 0px;
+}
+.one_user_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.one_user_list:hover {
+}
+.one_user_list li {
+  margin-right: 10%;
+}
+
+/***********POST FORM************/
+#post_form {
+  /*width: 800px;*/
+}
+#post_form_1 {
+
+}
